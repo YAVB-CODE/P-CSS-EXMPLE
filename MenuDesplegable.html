@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Desplegable</title>
+
+    <style>
+
+        .dd{
+            position: relative;
+            display: inline-block;
+        }
+        .dd-btn{
+            padding: 15px;
+            text-align: center;
+            border: none;
+            background-color: tomato;
+            width: 300px;
+            color: white;
+        }
+        .dd-content{
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            transition: all 300ms;
+            overflow: hidden;
+            border: 0.2px solid tomato;
+        }
+
+        .dd:hover > .dd-content{
+            height: 150px;
+        }
+
+        .dd-content a{
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+
+        .dd-content a:hover{
+            background-color: tomato;
+        }
+       
+
+
+    </style>
+
+</head>
+<body>
+
+        <div class="dd">
+            <button class="dd-btn">Hover Effetc</button>
+            <div class="dd-content">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Articles</a>
+            </div>
+        </div>
+   
+    
+</body>
+</html>

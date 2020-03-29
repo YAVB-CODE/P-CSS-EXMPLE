@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Modal o Emergente </title>
+
+    <style>
+
+        #box-image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 500ms;
+            top:-100%;
+        }
+
+        #box-image img{
+            height: 400px;
+            width: 400px;
+        }
+
+        #box-image:target{
+            top:0px;
+        }
+        #box-image a{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 15px;
+            text-decoration: none;
+            padding: 15px 20px;
+            background-color: tomato;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+
+        body > a{
+            text-decoration: none;
+            padding: 15px;
+            background-color: tomato;
+            color: white;
+            width: 100%;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <a href="#box-image">Abrir Imagen</a>
+
+    <div id="box-image">
+        <a href="#">X</a>
+        <img src="http://lorempixel.com/400/400/sports/Dummy-Text/" alt="">
+    </div>
+    
+</body>
+</html>

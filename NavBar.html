@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navigation NavBar Example</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 20px 0px;
+            background-color: #436cd4;
+            margin: 5px 10px;
+            border-radius: 15px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            transition: all 300ms;
+            position: relative;
+        }
+        .navbar i{
+            letter-spacing: 2px;
+        }
+        .navbar a:hover{
+            color: black;
+        }
+        .navbar a span{
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid black;
+            width: 0;
+            left: -25%;
+            bottom: -10px;
+            transition: all 300ms;
+        }
+        .navbar a:hover i > span{
+            width: 150%;
+        }
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+        <a href="#">
+            <i class="fa fa-home">INICIO <span></span></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-home">INICIO <span></span></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-home">INICIO <span></span></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-home">INICIO <span></span></i>
+        </a>
+    </nav>
+
+  </body>
+</html>
