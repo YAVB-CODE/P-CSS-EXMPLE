@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Effect</title>
+    <style>
+        body{
+            background-color: tomato;
+            padding-top: 5em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .typewriter h1{
+            color: white;
+            font-size: 4em;
+            overflow: hidden;
+            border-right: 0.15em solid white;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+            animation: typing 3.5s steps(30,end), blink-caret 0.5s step-end infinite;
+        }
+        @keyframes typing {
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+        @keyframes blink-caret {
+            from,to{
+                border-color: transparent;
+            }
+            50%{
+                border-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="typewriter">
+        <h1>Efecto de Escribir</h1>
+    </div>
+    
+</body>
+</html>
